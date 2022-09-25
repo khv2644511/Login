@@ -1,0 +1,178 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.login_container {
+    display: block;
+    width: 520px;
+    height: 712px;
+    border: 1px solid black;
+    margin: 200px auto;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+
+h1 {
+    border-bottom: 1px solid #c4c4c4;
+    text-align: center;
+    padding: 20px;
+}
+
+.login {
+    padding: 24px;
+    /* overflow: hidden; */
+}
+
+.login_input_id_pw * {
+    display: block;
+}
+
+.txt_login {
+    margin-bottom: 24px;
+}
+
+.login_input_id, .login_input_pw {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.txt-hide {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.keep {
+    cursor: pointer;
+}
+
+.keep::before {
+    content: '';
+    display: inline-block;
+    background-image: url('./img/css_sprites.png');
+    width: 22px;
+    height: 22px;
+    background-position: -52px -10px;
+    vertical-align: -5px;
+    margin-right: 8px;
+}
+
+.inp_keep:checked + .keep::before {
+    content: '';
+    display: inline-block;
+    background-image: url('./img/css_sprites.png');
+    width: 22px;
+    height: 22px;
+    background-position: -10px -10px;
+    vertical-align: -5px;
+    margin-right: 8px;
+}
+
+.login_go_btn {
+    width: 100%;
+    height: 50px;
+    margin: 21px 0;
+    background-color: 
+    #2F80ED;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.link_join_find {
+    text-align: center;
+    color: #767676;
+    margin-bottom: 30px;
+}
+
+.join::after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 16px;
+    background-color: #767676;
+    vertical-align: -2px;
+    margin: 0 12px;
+}
+
+.devide_line::after, .devide_line::before {
+    content: '';
+    display: inline-block;
+    width: 208px;
+    height: 1px;
+    background-color: #c4c4c4;
+    vertical-align: 4px;
+    /* margin: 0 10px; */
+}
+
+.devide_line::after {
+    margin-left: 13px;
+}
+
+.devide_line::before {
+    margin-right: 13px;
+}
+
+.devide_line {
+    text-align: center;
+    color: #767676;
+    margin-bottom: 29px;
+}
+
+.link_login_list {
+    width: 100%;
+    text-align: center;
+}
+
+.link_login_list li {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px;
+    color: #767676;
+
+}
+
+.link_login_list li+li { 
+    margin-top: 10px;
+}
+ 
+.link_google_login {
+    border: 1px solid #767676;
+    background-image: url('./img/Google__G__Logo\ 1.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+.link_facebook_login {
+    border: 1px solid #2D9CDB;
+    background-image: url('./img/facebook.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+.link_naver_login {
+    border: 1px solid #00BF18;
+    background-image: url('./img/naver-logo.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+.link_kakao_login {
+    border: 1px solid #F2C94C;
+    background-image: url('./img/message-circle.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
